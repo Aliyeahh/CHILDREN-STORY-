@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Magical Adventure</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>  
+    .jumbotron {
+  position: relative;
+  background-image: url('princess.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+  html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px 0;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">The Magical Adventure</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="story.html">Story</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">The Secret Princess</h1>
+        <p class="lead">Embark on a captivating journey with our young protagonist as they explore a world of wonder and excitement.</p>
+        <a href="story.html" class="btn btn-primary">Read the Story</a>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Featured Illustrations</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="image1.jpg" alt="image 1" class="img-fluid">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="image2.jpg" alt="image 2" class="img-fluid">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="image3.jpg" alt="image 3" class="img-fluid">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light py-3">
+    <div class="container text-center">
+      <p>The Secret Princess by Susan Knight
+Copyright 2012 - All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
